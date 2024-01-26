@@ -36,7 +36,7 @@ python web_interface.py
 
 Lembre-se de que este é um aplicativo de exemplo e pode ser expandido para incluir mais recursos, como processamento em lote, uma interface de usuário mais sofisticada, entre outros.
 
-## Autores
+## Autore
 - Washington (@ton8080)
 
 
