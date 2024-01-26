@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Web App</title>
+</head>
+<body>
+    <h1>OCR Web App</h1>
+
+<form action="/processar" method="post" enctype="multipart/form-data">
+    <label for="pdf_file">Escolha um arquivo PDF:</label>
+    <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" required>
+
+    <label for="page_number">Número da Página:</label>
+    <input type="number" name="page_number" id="page_number" required>
+
+    <button type="submit">Processar</button>
+</form>
+{% if resultado %}
+    <h2>Texto Extraído:</h2>
+    <p>{{ resultado|safe }}</p>
+{% endif %}
+</body>
+</html>
